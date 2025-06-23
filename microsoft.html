@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Microsoft Navbar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    nav {
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 30px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .nav-left img {
+      width: 28px;
+    }
+
+    .nav-left span {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .nav-center {
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-center a {
+      text-decoration: none;
+      color: #333;
+      font-size: 15px;
+      transition: color 0.3s;
+    }
+
+    .nav-center a:hover {
+      color: #0067b8;
+    }
+
+    .nav-right a {
+      text-decoration: none;
+      color: #333;
+      font-size: 18px;
+    }
+
+    .nav-right a:hover {
+      color: #0067b8;
+    }
+
+    @media screen and (max-width: 768px) {
+      .nav-center {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-left">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft Logo">
+      <span>Microsoft</span>
+    </div>
+
+    <div class="nav-center">
+      <a href="#">Microsoft 365</a>
+      <a href="#">Office</a>
+      <a href="#">Windows</a>
+      <a href="#">Surface</a>
+      <a href="#">Xbox</a>
+      <a href="#">Support</a>
+    </div>
+
+    <div class="nav-right">
+      <a href="#"><i class="fas fa-user-circle"></i></a>
+    </div>
+  </nav>
+
+</body>
+</html>
